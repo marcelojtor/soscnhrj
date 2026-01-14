@@ -1,0 +1,145 @@
+/* =============================
+   RESET & BASE
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =============================
+   HEADER / BANNER TOPO
+============================= */
+.header {
+    width: 100%;
+}
+
+.banner-master {
+    width: 100%;
+    height: auto;
+}
+
+/* =============================
+   MENU ÂNCORA
+============================= */
+.menu-ancora {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b2d5c; /* azul escuro */
+    padding: 12px 6px;
+}
+
+.menu-ancora a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* =============================
+   BLOCO IMAGENS PRINCIPAIS
+============================= */
+.bloco-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 16px;
+}
+
+.card-imagem {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* =============================
+   BANNER DEFENDA
+============================= */
+.banner-defenda {
+    padding: 0 16px 20px 16px;
+}
+
+.banner-defenda img {
+    border-radius: 6px;
+}
+
+/* =============================
+   MINI BANNERS
+============================= */
+.mini-banners {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 16px 24px 16px;
+}
+
+.mini-banner img {
+    border-radius: 6px;
+}
+
+/* =============================
+   SEÇÕES DE TEXTO (ÂNCORAS)
+============================= */
+.secao-texto {
+    min-height: 220px;
+    padding: 24px 16px;
+    background-color: #ffffff;
+}
+
+/* =============================
+   CTA FINAL
+============================= */
+.cta-final {
+    background-color: #f2c94c; /* amarelo do print */
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cta-final p {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.botao-cta {
+    background-color: #2e7d32; /* verde do botão */
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* =============================
+   AJUSTES PARA TELAS MAIORES
+============================= */
+@media (min-width: 768px) {
+    body {
+        max-width: 420px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+}
